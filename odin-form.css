@@ -23,6 +23,27 @@
 
 }
 
+.container .left .left_item{
+  display: flex;
+  width: 422px;
+  height: 200px;
+  background-color: rgba(0,0,0,.8);
+  position: fixed;
+  top: 200px;
+  color:white;
+  line-height: 200px;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.container .left .left_item img{
+  width: 100px;
+  height: 100px;
+}
+
 
 
 .container .right {
