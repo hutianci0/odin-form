@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.container{
+  display: flex;
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container .left {
+  width: 65%;
+  height: 100%;
+
+  background-image: url("./assets/image.png");
+  background-size: cover; /* 确保图片覆盖整个区域 */
+  background-repeat: no-repeat; /* 防止图片重复 */
+
+}
+
+
+
+.container .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .right header,form, footer{
+  flex:1
+}
+
+.container .right header {
+  display: flex;
+  background-color: rgb(249, 249, 249);
+}
+
+.container .right header .center{
+  width: 100%;
+  margin: auto;
+
+}
+
+.container .right form {
+  font-size: large;
+  box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 20%)
+}
+
+
+.container .right form fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  border: none;
+}
+.container .right form fieldset .itemList{
+  margin: 20px auto;
+  padding-left: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+.container .right form fieldset .item {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-bottom: 5px;
+}
+
+.container .right form fieldset .item  input {
+  height: 25px;
+  margin-top: 5px;
+  border: 0.5px solid #E5E7EB;
+}
+
+.container .right form fieldset .item  input:focus{
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 20%)  
+}
+
+/* .container .right form fieldset .item  input:valid{
+  border: 1px solid green;
+} */
+
+.container .right form fieldset .item  input:invalid{
+  border: 1px solid red;
+}
+
+
+
+.container .right footer {
+  background-color: rgb(249, 249, 249);
+}
+
+.container .right footer #button{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #596D48;
+  color: white;
+  line-height: 50px;
+  margin: 10px 0;
+  font-size: 20px;
+}
+.container .right footer #button:hover{
+  cursor: pointer;
+}
+
+.container .right footer a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
+}
+
+.wrapper{
+  margin: 10px;
+
+}

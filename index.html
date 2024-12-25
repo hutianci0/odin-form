@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>odin-form</title>
+  <link rel="stylesheet" href="./odin-form.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="right wrapper">
+      <header>
+        <div class="center">
+          <h2>
+            This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.<br>
+            Sign up now to get started.<br><br>
+            You <i>know</i> you want to.
+          </h2>
+        </div>
+      </header>
+      <form action="#">
+        <fieldset>
+          <legend>
+            <h3>Let's do this!</h3>
+          </legend>
+          <div class="itemList">
+            <div class="item"><label for="FIRST NAME">FIRST NAME:</label><input type="text" id="FIRST NAME"></div>
+            <div class="item"><label for="LAST NAME">LAST NAME:</label><input type="text" id="LAST NAME"></div>
+            <div class="item"><label for="EMAIL">EMAIL</label><input type="email" id="EMAIL" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
+              "></div>
+            <div class="item"><label for="PHONE NUMBER">PHONE NUMBER</label><input type="number" id="PHONE NUMBE"
+                pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$
+              "></div>
+            <div class="item"><label for="PASSWORD">PASSWORD</label><input type="password" id="PASSWORD"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"></div>
+            <div class="item"><label for="REPASSWORD">CONFIRM YOUR PASSWORD</label><input type="password"
+                id="REPASSWORD">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <footer class="wrapper">
+        <button type="submit" id="button">create account</button>
+        <p>Already have an account?<a href="#"> Log in</a></p>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="./confirmPassword.js"></script>
+</body>
+
+</html>
